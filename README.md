@@ -1,1 +1,7 @@
 # Project-2-
+
+For our project we decided to solve the minimal diet problem based on current Trader Joe's products and pricing. We decided on this since it was possible to code a web-scraper that fetched prices and nutritional information for all Trader Joe's products using python. We then cleaned this data and solved the diet problem to see what the most efficient diet would be for different age groups, which only have access to grocery shopping from Trader Joes. 
+
+This will allow for interesting analyses. By relying on nutritional label information, which does not include all the nutrients listed in the original set of constraints, we essentially flexibilized the problem, and should result in cheaper diets that fulfil the criteria. Based on our solution, we plan to investigate how shoppers of other grocery stores are impacted in terms of price, and how the inclusion of more constraints is expected to drive price of a saily diet up.
+
+For our code review, the TraderJoes_Scraper_VF contains all the relevant scraping logic, which first finds all food products and saves their names and product page urls, and then cycles through these pages to save the relevant data. the NEWTJ CSV files correspond to multiple stages of data cleaning for our Trader Joes database. This cleaning is performed in TJCleanVF 1 and 2. TJSolve is our preliminary solution to the minimal diet problem, which will be improved upon in the coming days.
